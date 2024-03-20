@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+.wrapper{
+    width: 80vw;
+    height: 61vh;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.container {
+    width: 45vw;
+    height: 61vh;
+    border: 2px solid white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.watch-box {
+    width: 100%;
+}
+
+.clock-box {
+    width: 100%;
+    background: #9e9e9e;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.span {
+    font-size: 88px;
+}
+
+.hours::after {
+    content: 'Hours';
+    font-size: 15px;
+    position: absolute;
+    bottom: 18px;
+    left: 65px;
+    font-weight: 600;
+}
+
+.minutes::after {
+    content: 'Minutes';
+    font-size: 15px;
+    position: absolute;
+    bottom: 18px;
+    left: 230px;
+    font-weight: 600;
+}
+
+.seconds::after {
+    content: 'Seconds';
+    font-size: 15px;
+    position: absolute;
+    bottom: 18px;
+    right: 230px;
+    font-weight: 600;
+}
+
+.milliseconds::after {
+    content: 'Milliseconds';
+    font-size: 15px;
+    position: absolute;
+    bottom: 18px;
+    right: 40px;
+    font-weight: 600;
+}
+
+.button-box {
+    background: #27373b;
+    width: 100%;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 48px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+
+}
+
+.lap-box {
+    width: 30%;
+    height: fit-content;
+    max-height: 450px;
+    background:#27373b;
+    border-radius: 10px;
+    border: 2px solid white ;
+    overflow-y: auto;
+
+}
+
+.heading{
+    position: fixed;
+    width: 23.8%;
+}
+.lap-box .heading h2 {
+    background: #9e9e9e;
+    text-align: center;
+    padding: 5px;
+    font-size: 55px;
+    border-top-left-radius :8px ;
+     border-top-right-radius: 8px ;
+
+}
+.lap-box ul{
+    padding : 78px 45px 10px 45px   ;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lap-box ul li {
+    color:white ;
+    font-size: 25px;
+    font-weight: 500;
+
+}
